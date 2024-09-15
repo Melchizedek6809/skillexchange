@@ -1,9 +1,15 @@
 ---
+import Contentwrap from '../components/contentwrap.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Welcome to Skill Exchange">
 	<main>
-		<h1>Welcome to Skill Exchange</h1>
+		<Contentwrap>
+			<h1>Welcome to Skill Exchange</h1>
+			<p class="content-center">
+				Welcome to Skill Exchange, a platform for sharing knowledge and skills with others. We believe that everyone has something to teach and something to learn. Whether you're an expert in a particular field or just starting out, there's always something new to discover.
+			</p>
+		</Contentwrap>
 	</main>
 </Layout>

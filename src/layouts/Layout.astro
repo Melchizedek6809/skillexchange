@@ -1,4 +1,8 @@
 ---
+import {Footer} from '../components/footer.jsx';
+import {NavbarDefault} from '../components/navbar.jsx';
+import ThemeProvider from '../components/theme-provider';
+
 interface Props {
 	title: string;
 }
@@ -17,7 +21,15 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+		<ThemeProvider client:only>
+			<div class="flex flex-col min-h-screen">
+				<NavbarDefault client:only></NavbarDefault>
+				<div class="flex-grow">
+					<slot />
+				</div>
+				<Footer client:only></Footer>
+			</div>
+		</ThemeProvider>
 	</body>
 </html>
 <style is:global>
@@ -36,5 +48,22 @@ const { title } = Astro.props;
 		font-family: system-ui, sans-serif;
 		background: #13151a;
 		color: #fff;
+	}
+
+	h1 {
+		font-size: 3.2rem;
+		text-align: center;
+	}
+	h2 {
+		font-size: 2.4rem;
+		text-align: center;
+	}
+	h3 {
+		font-size: 1.8rem;
+		text-align: center;
+	}
+
+	p {
+		margin-bottom: 1rem;
 	}
 </style>
