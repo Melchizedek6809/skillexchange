@@ -8,22 +8,17 @@ export const Footer = () => (
 			</Typography>
 			<ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
 				<li>
-					<a href="/" class="font-normal transition-colors hover:text-blue-500 focus:text-blue-500">
+					<a href="/about-us" class="font-normal transition-colors hover:text-blue-500 focus:text-blue-500">
 						About Us
 					</a>
 				</li>
 				<li>
-					<a href="/" class="font-normal transition-colors hover:text-blue-500 focus:text-blue-500">
-						Imprint
-					</a>
-				</li>
-				<li>
-					<a href="/" class="font-normal transition-colors hover:text-blue-500 focus:text-blue-500">
+					<a href="/contribute" class="font-normal transition-colors hover:text-blue-500 focus:text-blue-500">
 						Contribute
 					</a>
 				</li>
 				<li>
-					<a href="/" class="font-normal transition-colors hover:text-blue-500 focus:text-blue-500">
+					<a href="/contact-us" class="font-normal transition-colors hover:text-blue-500 focus:text-blue-500">
 						Contact Us
 					</a>
 				</li>

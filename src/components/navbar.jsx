@@ -25,12 +25,12 @@ export const NavbarDefault = () => {
 				</a>
 			</li>
 			<li class="flex items-center gap-x-2 p-1 font-medium">
-				<a href="#" className="flex items-center transition-colors hover:text-blue-500 focus:text-blue-500">
+				<a href="/people" className="flex items-center transition-colors hover:text-blue-500 focus:text-blue-500">
 					People
 				</a>
 			</li>
 			<li class="flex items-center gap-x-2 p-1 font-medium">
-				<a href="#" className="flex items-center transition-colors hover:text-blue-500 focus:text-blue-500">
+				<a href="/skills" className="flex items-center transition-colors hover:text-blue-500 focus:text-blue-500">
 					Skills
 				</a>
 			</li>
@@ -38,7 +38,7 @@ export const NavbarDefault = () => {
 	);
 
 	return (
-		<Navbar className="mx-auto max-w-screen-xl px-4 py-2 lg:px-8 lg:py-4">
+		<Navbar className="mx-auto max-w-screen-xl px-4 py-2 lg:px-4 lg:py-2">
 			<div className="container mx-auto flex items-center justify-between text-blue-gray-900">
 				<a href="/" class="mr-4 cursor-pointer py-1.5 font-medium">
 					<img src="/public/skillxchange_black.svg" alt="Skill X change" />
